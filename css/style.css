@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    font-family: "Nunito Sans" sans-serif;
+    line-height: 15px;
+    font-style: normal;
+    font-weight: normal;
+}
+.header{
+    max-width: 1438px;
+    height: 83px;
+    background: #131313;
+    margin: 0 auto;
+}
+.header__block{
+    width: 1256px;
+    border-radius: 2px;
+    margin: 0 auto;
+    padding-top: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    opacity: .8;
+}
+.header__block__title{
+    color: #E3B873;
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 15px;
+}
+.header__block__nav{
+    height: auto;
+}
+.link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 1.5em;
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 15px;
+    
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+.link li {
+	display: inline-block;
+	padding: 0px 20px;
+	margin: 0;
+    color: white;
+}
+.link li a{
+    color: white;
+    text-decoration: none;
+}
+.link :hover{
+    color: #E3B873;
+    text-decoration: underline;
+}
+.tell{
+/*    margin-left: 150px;*/
+}
+.phone{
+    color: #E3B873;
+    font-size: 13px;
+}
+.reqest{
+background: #E3B873;
+border-radius: 2px;
+    padding: 13px 33px 13px 33px;
+    margin-top: -12px;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+}
+.but{
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+.head{
+    margin: 0 auto;
+    margin-top: -40px;
+    height: 707px;
+    width: 1438px;
+    background: rgba(0, 0, 0, 0.7);
+    background: url(../images/image%204.3.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.head:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.7);
+  z-index: 2;
+}
+.container{
+    width: 580px;
+    height: 350;
+  position: relative;
+    z-index:3;
+  color: #fff;
+  text-align: center;  
+    position: relative;
+    bottom: -194px;
+    right: -134px;
+    text-align: left;
+}
+.container__title{
+    font-family: 'Yeseva One', serif;
+font-size: 40px;
+line-height: 53px;
+text-transform: uppercase;
+color: #FFFFFF;
+    font-style: normal;
+font-weight: normal;
+}
+.rostov{
+    color: #E3B873;
+}
+p{
+font-size: 22px;
+line-height: 36px;
+color: #FFFFFF;
+}
+.versia{
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 2px;
+   margin: 10px 20px 0 0;
+}
+.b1{
+    background: none;
+}
+     
