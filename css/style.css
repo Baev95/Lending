@@ -1,140 +1,261 @@
 body{
+    font-family: 'Nunito Sans', 'Yeseva One', cursive, sans-serif;
     margin: 0;
-    font-family: "Nunito Sans" sans-serif;
-    line-height: 15px;
-    font-style: normal;
-    font-weight: normal;
 }
+
+body *{
+    box-sizing: border-box;
+/*    margin: 0;*/
+}
+
 .header{
-    max-width: 1438px;
-    height: 83px;
     background: #131313;
+}
+
+.container{
+    max-width: 1440px;
     margin: 0 auto;
 }
-.header__block{
-    width: 1256px;
-    border-radius: 2px;
-    margin: 0 auto;
-    padding-top: 32px;
+
+.header-main{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    opacity: .8;
+    align-items: center;
+    height: 83px;
 }
-.header__block__title{
-    color: #E3B873;
+
+.header-logo{
+    font-size: 11px;
+    line-height: 15px;
     text-transform: uppercase;
-    font-size: 11px;
-    line-height: 15px;
-}
-.header__block__nav{
-    height: auto;
-}
-.link{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-left: 1.5em;
-    text-decoration: none;
-    font-size: 11px;
-    line-height: 15px;
-    
-}
-nav ul {
-	margin: 0;
-	padding: 0;
-}
-.link li {
-	display: inline-block;
-	padding: 0px 20px;
-	margin: 0;
-    color: white;
-}
-.link li a{
-    color: white;
-    text-decoration: none;
-}
-.link :hover{
     color: #E3B873;
+    display: inline-block;
+    padding-right: 95px;
+}
+
+.header-nav_link{
+    display: flex;  
+    list-style: none;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.header-nav_items{
+    margin-right: 47px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header-nav_items:hover{
     text-decoration: underline;
+    color: #E3B873;
 }
-.tell{
-/*    margin-left: 150px;*/
+
+.header-nav_link:last-child{
+    margin-right: 83px;
 }
+
+.header-phone{   
+    font-size: 11px;
+    line-height: 15px;
+    text-align: right;
+    text-decoration-line: underline;
+}
+
 .phone{
     color: #E3B873;
-    font-size: 13px;
+    text-decoration-line: underline;
 }
-.reqest{
-background: #E3B873;
-border-radius: 2px;
-    padding: 13px 33px 13px 33px;
-    margin-top: -12px;
+
+.button{
+    background: #E3B873;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    border: none;
+    padding: 13px 33px;
+    outline: 0;
 }
-.but{
+
+.button-text{
+    color: white;
+    font-style: italic;
     font-size: 11px;
     line-height: 15px;
     text-align: center;
     text-transform: uppercase;
-    color: white;
 }
-.head{
-    margin: 0 auto;
-    margin-top: -40px;
-    height: 707px;
-    width: 1438px;
-    background: rgba(0, 0, 0, 0.7);
-    background: url(../images/image%204.3.jpg) no-repeat center center;
+
+.main{
+    background: url(../images/image%204.3.jpg) no-repeat;
     background-size: cover;
+    height: 707px;
     position: relative;
+    z-index: 1;
 }
-.head:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,.7);
-  z-index: 2;
+
+.main::before{
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
 }
-.container{
-    width: 580px;
-    height: 350;
-  position: relative;
-    z-index:3;
-  color: #fff;
-  text-align: center;  
-    position: relative;
-    bottom: -194px;
-    right: -134px;
-    text-align: left;
+
+.main-wreaper{
+    padding-top: 194px;
+    width: 655px;
+    margin-left: 89px;
+    padding-bottom: 199px;
 }
-.container__title{
-    font-family: 'Yeseva One', serif;
-font-size: 40px;
-line-height: 53px;
-text-transform: uppercase;
-color: #FFFFFF;
+
+h1 h2 h3{
+    margin: 0;
+}
+
+.title{
+    font-family: Yeseva One;
     font-style: normal;
-font-weight: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-bottom: 19px;
 }
-.rostov{
+
+.title span{
+  color: #E3B873;  
+}
+
+p{
+    font-size: 22px;
+    line-height: 36px;
+    color: #FFFFFF;
+    padding-bottom: 41px;
+}
+
+.button-1{
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    margin-right: 20px;
+    padding-right: 65px;
+}
+
+.button-clear{
+    background: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;   
+}
+
+.main-container{
+    box-sizing: content-box;
+    height: 770px;
+    background: #131313;
+    padding-bottom: 415px;
+}
+
+.block-1{
+    width: 1350px;
+    height: 552;
+    padding: 200px 0;
+}
+
+.block-1__nav{
+    float: right;
+}
+
+.block-1__ul{
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-1__item{
+    font-family: Yeseva One;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase; color: rgba(255, 255, 255, 0.3);
+    margin-right: 60px;
+}
+
+.block-1__item:hover{
+    text-decoration: underline;
     color: #E3B873;
 }
-p{
-font-size: 22px;
-line-height: 36px;
-color: #FFFFFF;
+
+.block-1__wreaper{
+    clear: right;
+    padding-top: 52px;
+    display: flex;
+    justify-content: space-between;
 }
-.versia{
-    border: 1px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 2px;
-   margin: 10px 20px 0 0;
+
+.block-1__wreaper__text{
+    width: 60px;
 }
-.b1{
-    background: none;
+    
+.block-1__title{
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
 }
-     
+
+.block-1__text{
+    font-size: 14px;
+    line-height: 27px;
+    width: 442px;
+    text-align: justify;
+}
+
+.block-1__wreaper__grid{
+    width: 350px;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 120px;
+}
+/*
+
+.block-1__wreaper__grid__div{
+    padding: 5px;
+    margin: 0 80px 35px 0;
+}
+*/
+
+.block-1__wreaper__title{
+   font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873; 
+}
+
+.block-1__wreaper__grid__div span{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.block-1__image{ 
+/*     margin-right: -400px;*/
+}
+
+.block-1__photo{
+    width: 679px;
+    height 482px;
+    filter: drop-shadow(0px 50px 30px rgba(0, 0, 0, 0.15));
+}
+
+.section-container__video

@@ -4,44 +4,107 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" name="text/css">
+    <link rel="stylesheet" href="css/style.css" class="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="fonts/NunitoSans-Regular.ttf">
 </head>
 <body>
     <header class="header">
-        <div class="header__block">
-            <span class="header__block__title">
-                IC "Repair Design Project"
-            </span>
-            <nav class="header__block__nav">
-                <ul class="link">
-                    <li><a href="#HOME">HOME</a></li>
-                    <li><a href="">PROJECTS</a></li>
-                    <li><a href="">MEASUREMENT</a></li>
-                    <li><a href="">TEAM</a></li>
-                    <li><a href="">REVIEWS</a></li>
-                    <li><a href="">CONTACTS</a></li>
-                </ul>
-            </nav>
-            <span class="tell">
-                <a href="tel:89613306927" class="phone">+7 (928) 768-32-39</a>
-            </span>
-            <button class="reqest"><span class="but">Request a call</span></button>
-        </div>
-    </header>
-    <section class="head">
-            <div class="container">
-                <h1 class="container__title">Turnkey Repair in the city of <span class="rostov">Rostov-on-Don</span></h1>
-                <p class="container__text">Get ready-made turnkey repairs on time
-                with work time saving up to 45 days and 20% from
-                cost of materials due to the organization of work</p>
-                <button class="reqest versia"><span class="but">CALCULATE THE COST</span></button>
-                <button class="reqest versia b1"><span class="but">SUBMIT YOUR APPLICATION</span></button>
+        <div class="container header-main">
+                <span class="header-logo">IC "Repair Design Project"</span>
+                <nav class="header-nav">
+                    <ul class="header-nav_link">
+                        <li><a href="#HOME" class="header-nav_items">HOME</a></li>
+                        <li><a href="#PROJECTS" class="header-nav_items">PROJECTS</a></li>
+                        <li><a href="#MEASUREMENT" class="header-nav_items">MEASUREMENT</a></li>
+                        <li><a href="#TEAM" class="header-nav_items">TEAM</a></li>
+                        <li><a href="#REVIEWS" class="header-nav_items">REVIEWS</a></li>
+                        <li><a href="#CONTACTS" class="header-nav_items">CONTACTS</a></li>
+                    </ul>
+                </nav>
+                <span class="header-phone">
+                    <a href="tel:89613306927" class="phone">+7 (928) 768-32-39</a>
+                </span>
+                <button class="button"><span class="button-text">Request a call</span></button>
             </div>
-    </section>
+    </header>
+    <main>
+       <section class="main">
+            <div class="container">
+                <div class="main-wreaper">
+                    <h1 class="title">
+                        Turnkey Repair in the city of <span>Rostov-on-Don</span>
+                    </h1>
+                    <p>
+                       Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of materials due to the organization of work
+                    </p>
+                    <buttom class="button button-1"><span class="button-text">CALCULATE THE COST</span></buttom>
+                    <buttom class="button button-clear"><span class="button-text">SUBMIT YOUR APPLICATION</span></buttom>
+                </div>
+            </div>
+        </section>
+        <section class="main-container">
+           <div class="container block-1">
+                   <nav class="block-1__nav">
+                       <ul class="block-1__ul">
+                           <li class="block-1__item"><a>Rostov-on-Don, Admiral</a></li>
+                           <li class="block-1__item"><a>Sochi Thieves</a></li>
+                           <li class="block-1__item"><a>Rostov-on-Don Patriotic</a></li>
+                       </ul>
+                   </nav>
+                   <div class="block-1__wreaper">
+                       <div class="block-1__wreaper__text">
+                           <h2 class="block-1__title">Completed projects</h2>
+                           <p class="block-1__text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
+                           <div class="block-1__wreaper__grid">
+                               <div class="block-1__wreaper__grid__div">
+                                   <h3 class="block-1__wreaper__title">City:</h3>
+                                   <span>Rostov-on-Don <br>LCD admiral</span>
+                               </div>
+                               <div class="block-1__wreaper__grid__div">
+                                   <h3 class="block-1__wreaper__title">apartment area:</h3>
+                                   <span>81 m2</span>
+                               </div>
+                               <div class="block-1__wreaper__grid__div">
+                                   <h3 class="block-1__wreaper__title">Repair time:</h3>
+                                   <span>3.5 months</span>
+                               </div>
+                                <div class="block-1__wreaper__grid__div">
+                                   <h3 class="block-1__wreaper__title">Repair Cost:</h3>
+                                   <span>Upon request</span>
+                               </div>
+                               
+                           </div>
+                       </div>
+                        <div class="block-1__image">
+                           <img src="images/2.jpg" alt="Completed projects" class="block-1__photo">
+                        </div>
+                   </div>
+               </div>
+        </section>
+        <section class="section-container">
+             <div class="container">
+              <h3></h3>
+              <div></div>
+               <div class="section-container__video">
+                   <img src="images/3.jpg" alt="online control">
+               </div>
+               <div class="section-container">
+                   <p></p>
+               </div>
+               <div class="section-container">
+                   <form action="">
+                       <input type="text">  
+                       <input type="text">  
+                       <input type="text">
+                       <input type="text">
+                   </form>
+               </div>
+             </div>
+        </section>
+    </main>
+    <footer></footer>
 </body>
 </html>
