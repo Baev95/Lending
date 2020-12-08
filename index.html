@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--------   Метаданные  ---------->
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>IC "Repair Design Project"</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="lending">
+    <meta name="description" content="Первая работа студента Баева Юрия">
     <link rel="stylesheet" href="css/style.css" class="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
 </head>
+
+<!--------   Основа основ! ---------->
+
 <body>
+
+<!--------   Шапка сайта  ---------->
+   
     <header class="header">
         <div class="container header-main">
                 <span class="header-logo">IC "Repair Design Project"</span>
-                <nav class="header-nav">
+                <nav>
                     <ul class="header-nav_link">
                         <li><a href="#HOME" class="header-nav_items">HOME</a></li>
                         <li><a href="#PROJECTS" class="header-nav_items">PROJECTS</a></li>
@@ -24,87 +34,111 @@
                         <li><a href="#CONTACTS" class="header-nav_items">CONTACTS</a></li>
                     </ul>
                 </nav>
-                <span class="header-phone">
-                    <a href="tel:89613306927" class="phone">+7 (928) 768-32-39</a>
-                </span>
-                <button class="button"><span class="button-text">Request a call</span></button>
+                <a href="tel:89613306927" class="phone">+7 (928) 768-32-39</a>
+                <button class="button">Request a call</button>
             </div>
     </header>
+    
+    <!--------   Главная часть сайта  ---------->
+    
     <main>
-       <section class="main">
-            <div class="container">
-                <div class="main-wreaper">
+     
+      <!--------   Первый блок - HOME  ---------->
+      
+       <section class="HOME">
+            <div class="container HOME-main">
+  
                     <h1 class="title">
                         Turnkey Repair in the city of <span>Rostov-on-Don</span>
                     </h1>
-                    <p>
+                    <p class="paragraph">
                        Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of materials due to the organization of work
                     </p>
-                    <buttom class="button button-1"><span class="button-text">CALCULATE THE COST</span></buttom>
-                    <buttom class="button button-clear"><span class="button-text">SUBMIT YOUR APPLICATION</span></buttom>
-                </div>
+                    <buttom class="button btn">CALCULATE THE COST</buttom>
+                    <buttom class="button btn-clear">SUBMIT YOUR APPLICATION</buttom>
+
             </div>
         </section>
-        <section class="main-container">
+        
+        <!--------   Второй блок - PROJECTS  ---------->
+        
+        <section class="PROJECTS">
+    
            <div class="container block-1">
-                   <nav class="block-1__nav">
-                       <ul class="block-1__ul">
-                           <li class="block-1__item"><a>Rostov-on-Don, Admiral</a></li>
-                           <li class="block-1__item"><a>Sochi Thieves</a></li>
-                           <li class="block-1__item"><a>Rostov-on-Don Patriotic</a></li>
+                <nav>
+                       <ul class="PROJECTS-ul">
+                           <li class="PROJECTS__item"><a href="#">Rostov-on-Don, Admiral</a></li>
+                           <li class="PROJECTS__item"><a href="#">Sochi Thieves</a></li>
+                           <li class="PROJECTS__item"><a href="#">Rostov-on-Don Patriotic</a></li>
                        </ul>
                    </nav>
-                   <div class="block-1__wreaper">
-                       <div class="block-1__wreaper__text">
-                           <h2 class="block-1__title">Completed projects</h2>
-                           <p class="block-1__text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
-                           <div class="block-1__wreaper__grid">
-                               <div class="block-1__wreaper__grid__div">
-                                   <h3 class="block-1__wreaper__title">City:</h3>
-                                   <span>Rostov-on-Don <br>LCD admiral</span>
+                <div class="PROJECTS-wrapper">
+                    <div class="PROJECTS-wrapper__text">
+                           <h2 class="subtitle">Completed projects</h2>
+                           <p class="PROJECTS__text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
+                           <div class="PROJECTS-wrapper__grid">
+                               <div class="PROJECTS-wrapper-grid__items">
+                                   <h3 class="PROJECTS-subtitle subtitle">City:</h3>
+                                   <span>Rostov-on-Don LCD admiral</span>
                                </div>
-                               <div class="block-1__wreaper__grid__div">
-                                   <h3 class="block-1__wreaper__title">apartment area:</h3>
+                               <div class="PROJECTS-wrapper-grid__items">
+                                   <h3 class="PROJECTS-subtitle subtitle">apartment area:</h3>
                                    <span>81 m2</span>
                                </div>
-                               <div class="block-1__wreaper__grid__div">
-                                   <h3 class="block-1__wreaper__title">Repair time:</h3>
+                               <div class="PROJECTS-wrapper-grid__items">
+                                   <h3 class="PROJECTS-subtitle subtitle">Repair time:</h3>
                                    <span>3.5 months</span>
                                </div>
-                                <div class="block-1__wreaper__grid__div">
-                                   <h3 class="block-1__wreaper__title">Repair Cost:</h3>
+                                <div class="PROJECTS-wrapper-grid__items">
+                                   <h3 class="PROJECTS-subtitle subtitle">Repair Cost:</h3>
                                    <span>Upon request</span>
-                               </div>
-                               
-                           </div>
-                       </div>
-                        <div class="block-1__image">
-                           <img src="images/2.jpg" alt="Completed projects" class="block-1__photo">
+                            </div>
+                            <div class="circle circle1"></div>
+                            <div class="circle circle2"></div>
+                            <div class="circle circle3"></div>
                         </div>
-                   </div>
-               </div>
+                    </div>
+                    <img src="images/2.jpg" alt="Completed projects" class="PROJECTS-photo">
+                </div>
+            </div>
+
         </section>
-        <section class="section-container">
-             <div class="container">
-              <h3></h3>
-              <div></div>
-               <div class="section-container__video">
-                   <img src="images/3.jpg" alt="online control">
-               </div>
-               <div class="section-container">
-                   <p></p>
-               </div>
-               <div class="section-container">
-                   <form action="">
-                       <input type="text">  
-                       <input type="text">  
-                       <input type="text">
-                       <input type="text">
+        
+        <!--------   Третий блок - MEASUREMENT  ---------->
+        
+        <section class="MEASUREMENT">
+             <div class="container block-2">
+                <div class="MEASUREMENT-main">
+                     <h3 class="subtitle MEASUREMENT-subtitle">online control
+                         <div class=svg></div>
+                     </h3>
+                     <div class="MEASUREMENT-video">
+                        <img src="images/Group%2067.jpg" alt="online control">
+                     </div>
+                </div>
+                <hr>
+                
+                   <p class="MEASUREMENT-paragraph">At each facility,     a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!Leave a request below and you will receive a link to the broadcast.</p>
+                   
+                   <form action="#" class="form">
+                       <div class="Name">
+                           <p>Name</p>
+                           <input type="text" placeholder="What is your name:">
+                       </div>
+                       <div class="Tel">
+                           <p>Phone</p>
+                           <input type="tel" placeholder="Your phone number:">  
+                       </div>
+                       <button class="button">Submit</button>
+                       <input type="checkbox" class=agree id="№agree"><label for="agree">I agree to the processing of personal data</label>
                    </form>
-               </div>
-             </div>
+                 </div>
+             
         </section>
     </main>
-    <footer></footer>
+    
+    <!--------   Подвал сайта  ---------->
+    
+<!--    <footer></footer>-->
 </body>
 </html>

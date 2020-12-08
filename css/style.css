@@ -1,20 +1,96 @@
+/* -------------------ПОЕХАЛИ---------------*/
 body{
     font-family: 'Nunito Sans', 'Yeseva One', cursive, sans-serif;
-    margin: 0;
+    margin: 0 auto;
+        letter-spacing: 0;
 }
 
 body *{
     box-sizing: border-box;
-/*    margin: 0;*/
+    margin: 0;
 }
+
+/*--------Don’t Repeat Yourself (Не повторяться)-------*/
+
+.container{
+     max-width: 1440px;
+}
+
+.button{
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    border: 1px solid transparent;
+    padding: 13px 33px;
+    outline: 0;
+    cursor: pointer;
+    color: white;
+    font-style: italic;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.button:hover{
+    border: 1px solid #89F9EA;
+}
+
+.title{
+    font-family: Yeseva One;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 515px;
+}
+
+.subtitle{
+    font-family: Yeseva One;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 1.3;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.input{
+    width: 230px;
+    margin-right: 50px;
+}
+
+h1 h2 h3{
+    margin: 0;
+}
+
+.circle{
+    position: absolute;
+    background: #FFFFFF;
+    border-radius: 30px;
+    width: 9.57px;
+    height: 9.57px;
+    bottom: 0;
+}
+
+.form{
+    width: 770px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+}
+
+
+
+
+/*------ Шапка сайта ------*/
 
 .header{
     background: #131313;
-}
-
-.container{
-    max-width: 1440px;
-    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 .header-main{
@@ -22,26 +98,32 @@ body *{
     justify-content: space-between;
     align-items: center;
     height: 83px;
+    padding: 37px 90px 36px 92px;
+    font-size: 11px;
+    line-height: 1.3;
 }
+
+/*------ Лого в шапке ------*/
 
 .header-logo{
     font-size: 11px;
-    line-height: 15px;
+    line-height: 1.3;
     text-transform: uppercase;
     color: #E3B873;
     display: inline-block;
-    padding-right: 95px;
+    padding-right: 100px;
 }
+
+/*------ Навигация в шапке ------*/
 
 .header-nav_link{
     display: flex;  
     list-style: none;
-    font-size: 11px;
-    line-height: 15px;
+    padding-left: 0;
 }
 
 .header-nav_items{
-    margin-right: 47px;
+    padding-right: 50px;
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -52,40 +134,18 @@ body *{
 }
 
 .header-nav_link:last-child{
-    margin-right: 83px;
-}
-
-.header-phone{   
-    font-size: 11px;
-    line-height: 15px;
-    text-align: right;
-    text-decoration-line: underline;
+    padding-right: 80px;
 }
 
 .phone{
     color: #E3B873;
     text-decoration-line: underline;
+    padding-right: 45px;
 }
 
-.button{
-    background: #E3B873;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-    border-radius: 2px;
-    border: none;
-    padding: 13px 33px;
-    outline: 0;
-}
+/*------ Первый блок - HOME  ------*/
 
-.button-text{
-    color: white;
-    font-style: italic;
-    font-size: 11px;
-    line-height: 15px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.main{
+.HOME{
     background: url(../images/image%204.3.jpg) no-repeat;
     background-size: cover;
     height: 707px;
@@ -93,7 +153,7 @@ body *{
     z-index: 1;
 }
 
-.main::before{
+.HOME::before{
     content: "";
     background: rgba(0, 0, 0, 0.7);
     position: absolute;
@@ -104,158 +164,277 @@ body *{
     z-index: -1;
 }
 
-.main-wreaper{
-    padding-top: 194px;
-    width: 655px;
-    margin-left: 89px;
-    padding-bottom: 199px;
-}
-
-h1 h2 h3{
-    margin: 0;
-}
-
-.title{
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 53px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    padding-bottom: 19px;
+.HOME-main{
+    padding: 194px 799px 208px 134px;
+/*    width: 676px;*/
+/*    height: 305px;*/
 }
 
 .title span{
   color: #E3B873;  
 }
 
-p{
+.paragraph{
     font-size: 22px;
     line-height: 36px;
     color: #FFFFFF;
-    padding-bottom: 41px;
+    margin: 20px 0 41px 0; 
+    width: 504px;
 }
 
-.button-1{
+.btn{
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    padding: 19px 42px 20px 41px;
+    width: 207px;
     margin-right: 20px;
-    padding-right: 65px;
 }
 
-.button-clear{
+.btn-clear{
     background: none;
     border: 1px solid #FFFFFF;
-    border-radius: 2px;   
+    border-radius: 2px;  
+    padding: 19px 42px 20px 41px;
+    width: 207px
 }
 
-.main-container{
-    box-sizing: content-box;
-    height: 770px;
-    background: #131313;
-    padding-bottom: 415px;
+/*------ Второй блок - PROJECTS  ------*/
+
+.PROJECTS{
+    background-color:  #131313;
+    padding-bottom: 416px;
 }
 
 .block-1{
-    width: 1350px;
-    height: 552;
-    padding: 200px 0;
+/*    width: 1350px;*/
+/*    height: 552;*/
+    padding: 107px 134px 0 134px;
 }
 
-.block-1__nav{
+/*------ Навигация в PROJECTS  ------*/
+
+.PROJECTS-ul{
     float: right;
-}
-
-.block-1__ul{
     list-style-type: none;
     margin: 0;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 53px;
 }
 
-.block-1__item{
+.PROJECTS__item a{
     font-family: Yeseva One;
     font-size: 14px;
     line-height: 19px;
-    text-transform: uppercase; color: rgba(255, 255, 255, 0.3);
-    margin-right: 60px;
+    text-transform: uppercase; 
+    color: rgba(255, 255, 255, 0.3);
+    padding-right: 60px;
+    text-decoration: none;
 }
 
-.block-1__item:hover{
+.PROJECTS__item a:hover{
     text-decoration: underline;
     color: #E3B873;
 }
 
-.block-1__wreaper{
+/*------ Второй блок в PROJECTS  ------*/
+
+.PROJECTS-wrapper{
     clear: right;
-    padding-top: 52px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
-.block-1__wreaper__text{
-    width: 60px;
+.PROJECTS-wrapper::before{
+    content: "";
+    background-image: url(../svg/1.svg);
+    width: 41px;
+    height: 13px;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+}
+
+.PROJECTS-wrapper::after{
+    content: "";
+    background-image: url(../svg/2.svg);
+    width: 41px;
+    height: 13px;
+    position: absolute;
+    left: 164px;
+    bottom: 0px;
+}
+
+.circle1{
+    left: 71px;
+}
+
+.circle2{
+    left: 98px;
+}
+
+.circle3{
+    left: 126px;
+}
+
+.PROJECTS-wrapper__text{
+/*
+    width: 442px;
+    margin-right: 50px;
+*/
 }
     
-.block-1__title{
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 27px;
-    line-height: 37px;
-    letter-spacing: -0.07em;
-    text-transform: uppercase;
-    color: #E3B873;
-}
-
-.block-1__text{
+.PROJECTS__text{
     font-size: 14px;
-    line-height: 27px;
+    line-height: 1.9;
+    margin: 34px 50px 42px 0;
+    color: #FFF;
+/*
     width: 442px;
-    text-align: justify;
+    height: 86px;
+*/
 }
 
-.block-1__wreaper__grid{
+.PROJECTS-wrapper__grid{
     width: 350px;
     display: grid;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 120px;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+    grid-gap: 50px;
 }
-/*
 
-.block-1__wreaper__grid__div{
-    padding: 5px;
-    margin: 0 80px 35px 0;
-}
-*/
-
-.block-1__wreaper__title{
-   font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
+.PROJECTS-subtitle{
     font-size: 18px;
     line-height: 25px;
-    text-transform: uppercase;
-    color: #E3B873; 
 }
 
-.block-1__wreaper__grid__div span{
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
+.PROJECTS-wrapper-grid__items span{
     font-size: 13px;
     line-height: 21px;
     color: #FFFFFF;
 }
 
-.block-1__image{ 
-/*     margin-right: -400px;*/
-}
-
-.block-1__photo{
+.PROJECTS-photo{
     width: 679px;
-    height 482px;
+/*    height 482px;*/
     filter: drop-shadow(0px 50px 30px rgba(0, 0, 0, 0.15));
 }
 
-.section-container__video
+/*------ Третий блок - MEASUREMENT  ------*/
+
+.MEASUREMENT{
+    
+}
+
+.block-2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MEASUREMENT-main{
+    margin-top: -311px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 62px;
+}
+
+/*------ Блок с картинкой - MEASUREMENT  ------*/
+
+.MEASUREMENT-subtitle{
+    position: relative;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 196px;
+    letter-spacing: 0;
+}
+
+.MEASUREMENT-video{
+    position: relative;
+    width: 817px;
+    height: 434px;
+}
+
+.MEASUREMENT-video::before{
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.MEASUREMENT-video::after{
+    content: "";
+    background-image: url(../svg/play.svg);
+    position: absolute;
+    width: 145px;
+    height: 145px;
+    top: 40%;
+    left: 40%;
+    z-index: 2;
+}
+
+.svg{
+    background-image: url(../svg/Camera.svg);
+    position: relative;
+    width: 32px;
+    height: 28px;
+    left: 40%;
+    bottom: 0px;
+    margin-bottom: 31px;
+    margin-top: 12px;
+    
+}
+
+.svg::before{
+    content: "";
+    border-radius: 30px;
+    width: 32px;
+    position: absolute; 
+    border-bottom: 1px solid #E3B873;
+    top:50%;
+    right: 40px;
+}
+
+.svg::after{
+    content: "";
+    border-radius: 30px;
+    width: 32px;
+    position: absolute; 
+    border-bottom: 1px solid #E3B873;
+    top:50%;
+    left: 40px;
+}
+
+/*------ Основа - MEASUREMENT  ------*/
+
+hr{
+    width: 55px;
+    height: 1px;
+    background-color: #E3B873;
+    border-radius: 30px; 
+    margin-bottom: 34px;
+}
+
+.MEASUREMENT-paragraph{
+    width: 654px;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    color: #363636;
+    margin-bottom: 91px;
+}
+
+
+
+
+
+
+
