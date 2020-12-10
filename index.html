@@ -117,20 +117,37 @@
                      </div>
                 </div>
                 <hr>
-                
+                                
                    <p class="MEASUREMENT-paragraph">At each facility,     a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!Leave a request below and you will receive a link to the broadcast.</p>
                    
-                   <form action="#" class="form">
-                       <div class="Name">
-                           <p>Name</p>
-                           <input type="text" placeholder="What is your name:">
-                       </div>
-                       <div class="Tel">
-                           <p>Phone</p>
-                           <input type="tel" placeholder="Your phone number:">  
-                       </div>
-                       <button class="button">Submit</button>
-                       <input type="checkbox" class=agree id="№agree"><label for="agree">I agree to the processing of personal data</label>
+                   <form action="#" class="form" method="get" >
+                          
+                           <div class="form-text">
+<!--                               <p class="form-text_p">Name</p>-->
+                              <label for="user" class="form-text_p">Name</label>
+                               <input type="text" name="user" id="user" placeholder="What is your name:">
+                           </div>
+                           
+                           <div class="form-tel">
+<!--                               <p class="form-tel_p">Phone</p>-->
+                               <label for="user" class="form-tel_p">Phone</label>
+                               <input type="tel" name="tel" placeholder="Your phone number:"> 
+                           </div>
+                        
+                           <button class="button button-submit">Submit</button>
+                    
+                       <div class=a>
+                         
+                          <label for="agree" class="checkbox_agree">
+                          
+                           <input type="checkbox" class="agree" id="agree" checked >
+                           
+                           <span class="fake-checkbox"></span>
+                           
+                           I agree to the processing of personal data
+                           
+                           </label>
+                        </div>  
                    </form>
                  </div>
              
