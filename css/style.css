@@ -2,7 +2,7 @@
 body{
     font-family: 'Nunito Sans', 'Yeseva One', cursive, sans-serif;
     margin: 0 auto;
-        letter-spacing: 0;
+    letter-spacing: 0;
 }
 
 body *{
@@ -13,7 +13,8 @@ body *{
 /*--------Don’t Repeat Yourself (Не повторяться)-------*/
 
 .container{
-     max-width: 1440px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .button{
@@ -56,7 +57,7 @@ body *{
     color: #E3B873;
 }
 
-h1 h2 h3{
+h1, h2, h3, h4, h5, h6{
     margin: 0;
 }
 
@@ -76,7 +77,8 @@ h1 h2 h3{
     background: #131313;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 4;
+    width: 100%;
 }
 
 .header-main{
@@ -97,7 +99,7 @@ h1 h2 h3{
     text-transform: uppercase;
     color: #E3B873;
     display: inline-block;
-    padding-right: 100px;
+    margin-right: 100px;
 }
 
 /*------ Навигация в шапке ------*/
@@ -109,7 +111,7 @@ h1 h2 h3{
 }
 
 .header-nav_items{
-    padding-right: 50px;
+    margin-right: 50px;
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -194,7 +196,7 @@ h1 h2 h3{
     padding-bottom: 416px;
 }
 
-.block-1{
+.PROJECTS-main{
 /*    width: 1350px;*/
 /*    height: 552;*/
     padding: 107px 134px 0 134px;
@@ -316,14 +318,14 @@ h1 h2 h3{
     
 }
 
-.block-2{
+.MEASUREMENT-main{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-.MEASUREMENT-main{
+.MEASUREMENT-wrapper{
     margin-top: -311px;
     display: flex;
     flex-direction: column;
@@ -423,7 +425,6 @@ hr{
     margin-bottom: 91px;
 }
 
-
 .form{
     width: 770px;
     display: flex;
@@ -440,7 +441,6 @@ hr{
     margin-bottom: 37px;
 }
 
-
 .checkbox_agree{
     display: inline;
     font-size: 14px;
@@ -453,7 +453,6 @@ hr{
     height: 0;
     width: 0;
 }
-
 
 .fake-checkbox { 
   display: inline-block;
@@ -471,10 +470,9 @@ hr{
   background: #E3B873;
 }
 
-
-
 .agree:checked + .fake-checkbox::before {
    content: "✔";
+    color: white;
    font-size: 15px;
    display: block;
    margin-top: -3px;
@@ -490,7 +488,6 @@ hr{
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 }
-
 
 .button-submit{
     width: 200px;
@@ -525,3 +522,189 @@ label, input{
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 }
 
+.a{
+    margin-bottom: 147px;
+}
+
+/*------ Четвертый блок - TEAM  ------*/
+
+.TEAM-main{
+    
+}
+
+.TEAM-subtitle{
+    text-align: center;
+    margin-bottom: 21px;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #181818;
+}
+
+.tools{
+    text-align: center;
+    background-image: url(../svg/Tools.svg);
+    height: 28px;
+    width: 28px;
+    margin-bottom: 31px;
+    position: relative;
+    left: 48.8%;
+    bottom: -5px;
+}
+
+.tools::before{
+    content: "";
+    border-radius: 30px;
+    width: 32px;
+    position: absolute; 
+    border-bottom: 1px solid #E3B873;
+    top:50%;
+    right: 40px;
+}
+
+.tools::after{
+    content: "";
+    border-radius: 30px;
+    width: 32px;
+    position: absolute; 
+    border-bottom: 1px solid #E3B873;
+    top:50%;
+    left: 40px;
+}
+
+.TEAM-wrapper{
+    width: 1236px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 101px 230px 103px;
+}
+
+.TEAM-wrapper_block{
+    width: 392px;
+    margin-right: 30px;
+}
+
+.TEAM-wrapper_block:last-child{
+    margin-right: 0px;
+}
+
+.TEAM-main_block{
+    background: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    width: 330px;
+    margin: -127px 31px 0 31px;
+    z-index: 1;
+    position: relative;
+    padding: 25px 29px 49px 34px;
+    height: 286px;
+}
+
+.TEAM-main_nav{
+    margin-left: -20px;
+    font-family: Nunito Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 27px;
+
+color: #959595;
+}
+
+.TEAM-main_block h4{
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+    margin-bottom: 13px;
+}
+
+.TEAM-main_items{
+
+}
+
+.from{
+    width: 228px;
+    height: 54px;
+    padding: 17px 17px;
+    margin-top: -28px;
+    z-index: 3;
+    position: relative;
+    margin-left: 30px;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+/*------ Пятый блок - REVIEWS  ------*/
+
+.REVIEWS{
+    
+}
+
+.REVIEWS-main{
+
+    margin-top: 10%;
+    background-image: url(../images/image%206.1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    background-size: 54% 77%;
+}
+
+.REVIEWS-aside{
+    display: flex;
+    justify-content: space-around;
+}
+
+.REVIEWS-aside_order{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 506px;
+    height: 509px;
+    margin: 0 210px 0 249px
+}
+
+
+.form-contacts{
+    width: 506px;
+    height: 509px;
+    background: #000;
+    margin-right: 100px;
+}
+
+.numeral{
+    height: 51px;
+    width: 51px;
+    background-color: #E3B873;
+    border-radius: 50%;
+    border: 8px solid white;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.numeral p{
+    font-family: Yeseva One;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.REVIEWS-aside_items > p{
+    
+font-family: Nunito Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+
+color: #363636;
+}
+
+.REVIEWS-aside_items {
+    display: flex;
+    align-items: center;
+}
