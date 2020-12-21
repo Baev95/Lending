@@ -8,6 +8,7 @@ body{
 body *{
     box-sizing: border-box;
     margin: 0;
+  
 }
 
 /*--------Don’t Repeat Yourself (Не повторяться)-------*/
@@ -57,19 +58,27 @@ body *{
     color: #E3B873;
 }
 
+.subtitle-h3{
+    text-align: center;
+    margin-bottom: 21px;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #181818;
+    letter-spacing: 0;
+}
+
 h1, h2, h3, h4, h5, h6{
     margin: 0;
 }
 
 .circle{
-    position: absolute;
     background: #FFFFFF;
     border-radius: 30px;
     width: 9.57px;
     height: 9.57px;
     bottom: 0;
 }
-
 
 /*------ Шапка сайта ------*/
 
@@ -140,7 +149,6 @@ h1, h2, h3, h4, h5, h6{
 .HOME{
     background: url(../images/image%204.3.jpg) no-repeat;
     background-size: cover;
-    height: 707px;
     position: relative;
     z-index: 1;
 }
@@ -157,9 +165,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .HOME-main{
-    padding: 194px 799px 208px 134px;
-/*    width: 676px;*/
-/*    height: 305px;*/
+    padding: 194px 0 208px 134px;
 }
 
 .title span{
@@ -177,8 +183,8 @@ h1, h2, h3, h4, h5, h6{
 .btn{
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
     padding: 19px 42px 20px 41px;
-    width: 207px;
     margin-right: 20px;
+    width: 207px;
 }
 
 .btn-clear{
@@ -186,7 +192,7 @@ h1, h2, h3, h4, h5, h6{
     border: 1px solid #FFFFFF;
     border-radius: 2px;  
     padding: 19px 42px 20px 41px;
-    width: 207px
+    width: 207px;
 }
 
 /*------ Второй блок - PROJECTS  ------*/
@@ -194,11 +200,12 @@ h1, h2, h3, h4, h5, h6{
 .PROJECTS{
     background-color:  #131313;
     padding-bottom: 416px;
+    background-image: url(../images/City.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
 }
 
 .PROJECTS-main{
-/*    width: 1350px;*/
-/*    height: 552;*/
     padding: 107px 134px 0 134px;
 }
 
@@ -237,36 +244,30 @@ h1, h2, h3, h4, h5, h6{
     position: relative;
 }
 
-.PROJECTS-wrapper::before{
-    content: "";
-    background-image: url(../svg/1.svg);
-    width: 41px;
-    height: 13px;
-    position: absolute;
-    left: 0;
-    bottom: 0px;
-}
-
-.PROJECTS-wrapper::after{
-    content: "";
-    background-image: url(../svg/2.svg);
-    width: 41px;
-    height: 13px;
-    position: absolute;
-    left: 164px;
-    bottom: 0px;
+.block-circle{
+    display: flex;
 }
 
 .circle1{
-    left: 71px;
+    margin-right: 18px;
 }
 
 .circle2{
-    left: 98px;
+    margin-right: 18px;
 }
 
 .circle3{
-    left: 126px;
+    margin-right: 29px;
+}
+
+.arrow{
+    width: 41px;
+    height: 13px;
+    margin-right: 29px;
+}
+
+.arrow:last-child{
+    margin-right: 0px;
 }
 
 .PROJECTS-wrapper__text{
@@ -293,6 +294,7 @@ h1, h2, h3, h4, h5, h6{
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 1fr;
     grid-gap: 50px;
+        margin-bottom: 90px;
 }
 
 .PROJECTS-subtitle{
@@ -336,12 +338,10 @@ h1, h2, h3, h4, h5, h6{
 /*------ Блок с картинкой - MEASUREMENT  ------*/
 
 .MEASUREMENT-subtitle{
-    position: relative;
     font-size: 20px;
     line-height: 28px;
     text-align: center;
     color: #FFFFFF;
-    width: 196px;
     letter-spacing: 0;
 }
 
@@ -349,6 +349,9 @@ h1, h2, h3, h4, h5, h6{
     position: relative;
     width: 817px;
     height: 434px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .MEASUREMENT-video::before{
@@ -362,27 +365,15 @@ h1, h2, h3, h4, h5, h6{
     z-index: 1;
 }
 
-.MEASUREMENT-video::after{
-    content: "";
-    background-image: url(../svg/play.svg);
+.play{
     position: absolute;
-    width: 145px;
-    height: 145px;
-    top: 40%;
-    left: 40%;
-    z-index: 2;
+    z-index: 3;
 }
 
 .svg{
-    background-image: url(../svg/Camera.svg);
-    position: relative;
-    width: 32px;
-    height: 28px;
-    left: 40%;
-    bottom: 0px;
     margin-bottom: 31px;
     margin-top: 12px;
-    
+    position: relative;
 }
 
 .svg::before{
@@ -409,10 +400,12 @@ h1, h2, h3, h4, h5, h6{
 
 hr{
     width: 55px;
-    height: 1px;
+    height: 1.5px;
     background-color: #E3B873;
     border-radius: 30px; 
     margin-bottom: 34px;
+    border: none;
+
 }
 
 .MEASUREMENT-paragraph{
@@ -503,6 +496,7 @@ hr{
 
 label, input{
     display: block;
+    font-family: Nunito Sans;
 }
 
 .form-tel label, .form-text label{
@@ -522,7 +516,7 @@ label, input{
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 }
 
-.a{
+.checkbox-versia_1{
     margin-bottom: 147px;
 }
 
@@ -541,25 +535,33 @@ label, input{
     color: #181818;
 }
 
+.Block-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
 .tools{
-    text-align: center;
-    background-image: url(../svg/Tools.svg);
     height: 28px;
     width: 28px;
     margin-bottom: 31px;
+/*
     position: relative;
     left: 48.8%;
     bottom: -5px;
+*/
 }
 
 .tools::before{
-    content: "";
+  content: "";
     border-radius: 30px;
     width: 32px;
     position: absolute; 
     border-bottom: 1px solid #E3B873;
-    top:50%;
-    right: 40px;
+    top: 57%;
+    left: 46%;
 }
 
 .tools::after{
@@ -568,8 +570,9 @@ label, input{
     width: 32px;
     position: absolute; 
     border-bottom: 1px solid #E3B873;
-    top:50%;
-    left: 40px;
+    top: 57%;
+    right: 46%;
+    
 }
 
 .TEAM-wrapper{
@@ -596,18 +599,16 @@ label, input{
     z-index: 1;
     position: relative;
     padding: 25px 29px 49px 34px;
-    height: 286px;
 }
 
 .TEAM-main_nav{
     margin-left: -20px;
     font-family: Nunito Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 27px;
-
-color: #959595;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
 }
 
 .TEAM-main_block h4{
@@ -624,7 +625,7 @@ color: #959595;
 .from{
     width: 228px;
     height: 54px;
-    padding: 17px 17px;
+    padding: 17px 19px 17px 18px;
     margin-top: -28px;
     z-index: 3;
     position: relative;
@@ -632,6 +633,17 @@ color: #959595;
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
+    font-family: Yeseva One;
+    border: none;
+    cursor: default;
+}
+
+.from:hover{
+    border: none;
+}
+
+.from:last-child{
+     padding: 17px 16px;
 }
 
 /*------ Пятый блок - REVIEWS  ------*/
@@ -642,34 +654,34 @@ color: #959595;
 
 .REVIEWS-main{
 
-    margin-top: 10%;
-    background-image: url(../images/image%206.1.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
+}
 
-    background-size: 54% 77%;
+.REVIEWS-aside::before{
+    content: "";
+    background-image: url(../images/home.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -115px;
+    left: 5px;
+    bottom: -15px;
+    right: 0;
 }
 
 .REVIEWS-aside{
     display: flex;
     justify-content: space-around;
+    position: relative;
 }
 
 .REVIEWS-aside_order{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 506px;
-    height: 509px;
-    margin: 0 210px 0 249px
-}
-
-
-.form-contacts{
-    width: 506px;
-    height: 509px;
-    background: #000;
-    margin-right: 100px;
+    margin: 0 210px 0 249px;
+    height: 473px;
+    position: relative;
 }
 
 .numeral{
@@ -679,10 +691,10 @@ color: #959595;
     border-radius: 50%;
     border: 8px solid white;
     padding: 15px;
-    margin: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 17px;
 }
 
 .numeral p{
@@ -691,20 +703,432 @@ color: #959595;
     line-height: 25px;
     text-align: center;
     color: #FFFFFF;
+
 }
 
 .REVIEWS-aside_items > p{
-    
-font-family: Nunito Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 19px;
-
-color: #363636;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    line-height: 19px;
+    color: #363636;
 }
 
-.REVIEWS-aside_items {
+.REVIEWS-aside_items{
     display: flex;
     align-items: center;
+    margin-bottom: 102px
+} 
+
+.fourth-num{
+    margin-bottom: 0;
+}
+
+.main-form-contacts{
+    z-index: 2;
+}
+
+.form-contacts p{
+    font-family: Nunito Sans;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+    padding: 28px 105px 39px 104px;
+}
+
+.form-contacts{
+    background: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-block{
+    padding: 0 49px 16px 49px;
+}
+
+.form-contacts_items{
+    margin-bottom: 49px;
+    font-family: Nunito Sans;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form-contacts_items:last-child{
+     margin-bottom: 16px;  
+}
+
+.form-contacts_items input{
+    width: 408px;
+    background: none;
+    outline: none;
+    border: none;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.checkbox-versia_2{
+    margin: 0 171px 39px 49px
+}
+
+.fake-checkbox_1{
+    margin: 0;
+}
+
+.contacts-checkbox{
+    font-family: Nunito Sans;
+    font-size: 14px;
+    line-height: 163.68%;
+    color: #FFFFFF;
+}
+
+.type-submit{
+    width: 213px;
+    margin: 0 49px 26px 244px;
+    line-height: 21px;
+}
+
+.block-pig{
+    margin: 20px 132px 242px 880px;
+    display: flex;
+    align-items: center;
+}
+
+.pig-text{
+    font-size: 18px;
+    line-height: 26px;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    width: 249px;
+}
+
+/*------ Пятый блок - FANTASIES  ------*/
+
+.FANTASIES{
+    background-color: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+    background-image: url(../images/FANTASIES-main.jpg);
+    position: relative;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: content-box;
+    margin-bottom: 110px;
+}
+
+.FANTASIES::before{
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.FANTASIES-main{
+    display: flex;
+    flex-direction: row;
+    box-sizing: content-box;
+}
+
+.FANTASIES-main_text{
+    display: flex;
+    flex-direction: column;
+    margin: 137px 189px 98px 99px;
+}
+
+.subtitle1{
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-bottom: 47px;
+}
+
+.FANTASIES-ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.FANTASIES-main-items a{
+    font-family: Nunito Sans;
+    font-size: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.FANTASIES-main-items{
+    margin-bottom: 25px;
+}
+
+.FANTASIES-main-items:last-child{
+    margin-bottom: 0;
+}
+
+.FANTASIES-main_img{
+    grid-gap: 43px;
+    display: grid;
+    grid-template-rows: 556px 275px;
+    grid-template-columns: 351px 420px;
+}
+
+.FANTASIES-main-items a:hover{
+   text-decoration: underline;
+    color: #E3B873;
+}
+
+.clock{
+    margin-top: -41px;
+}
+
+.tv{
+    height: max-content;
+}
+
+.bed{
+   
+   height: max-content;
+    margin-top: -112px;
+}
+
+.flower{
+    height: max-content;
+    margin: -380px 0 0 0;
+}
+
+/*------ Шестой блок - CONTACTS  ------*/
+
+.CONTACTS{
+    background-image: url(../images/City.png);
+    background-position: 100%;
+    background-repeat: repeat-x;
+}
+
+.CONTACTS-main{
+    position: relative;
+}
+
+.CONTACTS-main .subtitle-h3{
+    margin-bottom: 13px;
+}
+
+.handshake{
+    height: 33px;
+    width: 27px;
+    margin-bottom: 31px;
+}
+
+.handshake::before{
+    content: "";
+    border-radius: 30px;
+    width: 32px;
+    position: absolute; 
+    border-bottom: 1px solid #E3B873;
+    top: 52%;
+    left: 46%;
+    
+}
+
+.handshake::after{
+   content: "";
+    border-radius: 30px;
+    width: 32px;
+    position: absolute; 
+    border-bottom: 1px solid #E3B873;
+    top: 52%;
+    right: 46%; 
+    
+}
+
+.CONTACTS-text{
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: #363636;
+    margin-bottom: 46px;
+}
+
+.Block-images{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.Block-images_items{
+    width: 376px;   
+    margin-right: 54px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+
+.Block-images_items:nth-child(3){
+    margin-right: 0;
+}
+
+.FedAfaKir{
+    border-radius: 50%;
+    margin: 24px 23px 22px 20px;
+}
+
+.images-items_top{
+    display: flex;
+    align-items: center;
+}
+
+.CONTACTS-name{
+    font-family: Yeseva One;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 23px;
+
+color: #181818;
+    margin: 41px 79px 39px 0;
+}
+
+.Block-images_items p{
+    margin: 0 32px 16px 20px;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 180%;
+    color: #959595;
+}
+
+.Block-images_items p:last-of-type{
+/*    margin-bottom: 0px;*/
+    margin-bottom: 67px;
+}
+
+.cost{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 294px;
+    background: #E3B873;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+    padding: 0px 11px;
+    text-transform: uppercase;
+    font-family: Yeseva One;
+    font-size: 17px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: -27px;
+}
+
+.questions-wrapper{
+    background: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+    width: 883px;
+    margin-bottom: -250px;
+    position: relative;
+    z-index: 2;
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 34px 181px 34px 181px;
+    z-index: 1
+}
+
+.questions-title{
+    font-family: Yeseva One;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 45px;
+}
+
+.questions-block{
+    display: flex;
+    justify-content: space-between;
+}
+
+.questions-form{
+    
+}
+
+.questions-form input{
+    width: 231px; 
+}
+
+.questions-answer input{
+    width: 520px;
+}
+
+.form-text-right{
+    margin-right: 58px;
+}
+
+.checkbox-versia_3{
+    margin: 46 117px 50px 117px
+}
+
+.questions-button{
+    margin-top: 50px;
+}
+
+/*------ Седьмой блок - MAP  ------*/
+
+.MAP{
+    background-color: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+    background-image: url(../images/Window.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.MAP::before{
+    content: "";
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -2;
+}
+
+.MAP-main{
+    padding: 274px 260px 65px 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+.final{
+    font-family: Yeseva One;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin: 31px 0 26px;
+    width: 600px;
+}
+
+.MAP-svg{
+    margin-bottom: 43px;
+}
+
+.mail{
+    margin-right: 15px;
 }
