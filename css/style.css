@@ -1,4 +1,4 @@
-/* -------------------ПОЕХАЛИ---------------*/
+﻿/* -------------------ПОЕХАЛИ---------------*/
 body{
     font-family: 'Nunito Sans', cursive, sans-serif;
     margin: 0 auto;
@@ -1201,4 +1201,8 @@ color: #181818;
 
 .mail{
     margin-right: 15px;
+}
+
+#tr-popup[data-hidden="true"]{
+    display: none;
 }
