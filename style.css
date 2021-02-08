@@ -1,0 +1,1208 @@
+﻿/* -------------------ПОЕХАЛИ---------------*/
+body{
+    font-family: 'Nunito Sans', cursive, sans-serif;
+    margin: 0 auto;
+    letter-spacing: 0;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/*--------Don’t Repeat Yourself (Не повторяться)-------*/
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.button{
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    border: 1px solid transparent;
+    padding: 13px 33px;
+    outline: 0;
+    cursor: pointer;
+    color: white;
+    font-style: italic;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.button:hover{
+    border: 1px solid #89F9EA;
+    background-color: transparent; 
+}
+
+.title{
+    font-family: Yeseva One;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: #FFFFFF;
+/*    width: 515px;*/
+}
+
+.subtitle{
+    font-family: Yeseva One;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 1.3;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.subtitle-h3{
+    text-align: center;
+    margin-bottom: 21px;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #181818;
+    letter-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+.circle{
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    width: 9.57px;
+    height: 9.57px;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.circle:hover{
+    background: #FFFFFF;
+}
+
+.checkbox_agree:active{
+    opacity: 1;
+}
+
+/*------ Шапка сайта ------*/
+
+.header{
+    background: #131313;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+/*    width: 100%;*/
+}
+
+.header-main{
+    display: flex;
+/*    justify-content: space-between;*/
+    align-items: center;
+    height: 83px;
+    padding: 37px 90px 36px 92px;
+    font-size: 11px;
+    line-height: 1.3;
+}
+
+/*------ Лого в шапке ------*/
+
+.header-logo{
+    font-size: 11px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-right: 122px;
+    text-decoration: none;
+}
+
+/*------ Навигация в шапке ------*/
+
+.header-nav_link{
+    display: flex;  
+    list-style: none;
+    padding-left: 0;
+}
+
+.header-nav_items{
+    margin-right: 50px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header-nav_items:hover{
+    text-decoration: underline;
+    color: #E3B873;
+}
+
+.header-nav_link:last-child{
+    margin-right: 0;
+}
+
+.phone{
+    color: white;
+    text-decoration-line: none;
+    margin-right: 45px;
+}
+
+.phone:hover{
+    color: #E3B873;
+    text-decoration-line: underline;
+}
+/*------ Первый блок - HOME  ------*/
+
+.HOME{
+    background: url(../images/image%204.3.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.HOME::before{
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.HOME-main{
+    padding: 194px 0 208px 134px;
+}
+
+.title span{
+  color: #E3B873;  
+}
+
+.paragraph{
+    font-size: 22px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin: 20px 0 41px 0; 
+    width: 504px;
+}
+
+.btn{
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    padding: 19px 42px 20px 41px;
+    margin-right: 20px;
+    width: 207px;
+}
+
+.btn-clear{
+    border-radius: 2px;  
+    padding: 19px 42px 20px 41px;
+    width: 207px;
+}
+
+/*------ Второй блок - PROJECTS  ------*/
+
+.PROJECTS{
+    background-color:  #131313;
+    padding-bottom: 416px;
+    background-image: url(../images/City.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
+
+.PROJECTS-main{
+    padding: 107px 134px 0 134px;
+}
+
+/*------ Навигация в PROJECTS  ------*/
+
+.PROJECTS-ul{
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 53px;
+}
+
+.PROJECTS__item a{
+    font-family: Yeseva One;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase; 
+    color: rgba(255, 255, 255, 0.3);
+    padding-right: 60px;
+    text-decoration: none;
+}
+
+.PROJECTS__item a:hover{
+    text-decoration: underline;
+    color: #E3B873;
+}
+
+/*------ Второй блок в PROJECTS  ------*/
+
+.PROJECTS-wrapper{
+    clear: right;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.block-circle{
+    display: flex;
+}
+
+.circle1{
+    margin-right: 18px;
+}
+
+.circle2{
+    margin-right: 18px;
+}
+
+.circle3{
+    margin-right: 29px;
+}
+
+.arrow{
+    width: 41px;
+    height: 13px;
+    margin-right: 29px;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.arrow:hover{
+    opacity: 1;
+}
+
+.arrow:last-child{
+    margin-right: 0px;
+}
+
+.PROJECTS-wrapper__text{
+/*
+    width: 442px;
+    margin-right: 50px;
+*/
+}
+    
+.PROJECTS__text{
+    font-size: 14px;
+    line-height: 1.9;
+    margin: 34px 50px 42px 0;
+    color: #FFF;
+/*
+    width: 442px;
+    height: 86px;
+*/
+}
+
+.PROJECTS-wrapper__grid{
+    width: 350px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+    grid-gap: 50px;
+        margin-bottom: 90px;
+}
+
+.PROJECTS-subtitle{
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.PROJECTS-wrapper-grid__items span{
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.PROJECTS-another-photo{
+    display: none;
+}
+
+.PROJECTS-photo{
+/*    min-width: 100%;*/
+    width: 679px;
+    filter: drop-shadow(0px 50px 30px rgba(0, 0, 0, 0.15));
+}
+
+.PROJECTS-photo__1{
+    max-height: 100%;
+    height: auto;
+}
+
+/*------ Третий блок - MEASUREMENT  ------*/
+
+.MEASUREMENT{
+    
+}
+
+.MEASUREMENT-main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MEASUREMENT-wrapper{
+    margin-top: -311px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 62px;
+}
+
+/*------ Блок с картинкой - MEASUREMENT  ------*/
+
+.MEASUREMENT-subtitle{
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+
+.MEASUREMENT-video{
+    position: relative;
+    width: 817px;
+    height: 434px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MEASUREMENT-video::before{
+    content: "";
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.play{
+    position: absolute;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.svg{
+    margin-bottom: 31px;
+    margin-top: 12px;
+    position: relative;
+}
+
+.svg::before{
+    content: "";
+    border-radius: 30px;
+    width: 32px;
+    position: absolute; 
+    border-bottom: 1px solid #E3B873;
+    top:50%;
+    right: 40px;
+}
+
+.svg::after{
+    content: "";
+    border-radius: 30px;
+    width: 32px;
+    position: absolute; 
+    border-bottom: 1px solid #E3B873;
+    top:50%;
+    left: 40px;
+}
+
+/*------ Основа - MEASUREMENT  ------*/
+
+hr{
+    width: 55px;
+    height: 1.5px;
+    background-color: #E3B873;
+    border-radius: 30px; 
+    margin: 0 0 34px 0;
+    border: none;
+
+}
+
+.MEASUREMENT-paragraph{
+    width: 681px;
+    height: 130px;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    color: #363636;
+    margin-bottom: 91px;
+}
+
+.form{
+    width: 770px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-text{
+    margin-right: 58px
+}
+
+.form-tel{
+    margin-right: 49px;
+    margin-bottom: 37px;
+}
+
+.checkbox_agree{
+    display: inline;
+    font-size: 14px;
+    color: #181818;
+    cursor: pointer;
+}
+
+.agree{
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.fake-checkbox { 
+  display: inline-block;
+  margin-left: 238px;
+  margin-right: 9px;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-top: -10px;
+  border: 1px solid #E3B873;
+  border-radius: 1px;
+}
+
+.agree:checked + .fake-checkbox {
+  background: #E3B873;
+}
+
+.agree:checked + .fake-checkbox::before {
+   content: "✔";
+    color: white;
+   font-size: 15px;
+   display: block;
+   margin-top: -3px;
+   margin-left: 2px;
+}
+
+.agree:checked + .fake-checkbox::after {
+    left: 8px;
+    top: 6px;
+    width: 6px;
+    height: 11px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.button-submit{
+    width: 200px;
+    height: 50px;
+    font-family: Nunito Sans;
+    font-size: 13px;
+    line-height: 27px;
+}
+
+.form-text, .form-tel{
+    display: inline-block;
+}
+
+label, input{
+    display: block;
+    font-family: Nunito Sans;
+}
+
+.form-tel label, .form-text label{
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(54, 54, 54, 0.5);
+    transform: rotate(-0.07deg);
+}
+
+.form-tel input, .form-text input{
+    font-family: Nunito Sans;
+    font-size: 14px;
+    line-height: 23px;
+    color: #363636;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+
+.checkbox-versia_1{
+    margin-bottom: 147px;
+}
+
+/*------ Четвертый блок - TEAM  ------*/
+
+.TEAM-main{
+    
+}
+
+.TEAM-subtitle{
+    text-align: center;
+    margin-bottom: 21px;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #181818;
+}
+
+.Block-wrapper_team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.Block-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.tools{
+    height: 28px;
+    width: 28px;
+    margin-bottom: 31px;
+/*
+    position: relative;
+    left: 48.8%;
+    bottom: -5px;
+*/
+}
+
+.tools::before{
+  content: "";
+    border-radius: 30px;
+    width: 32px;
+    position: absolute; 
+    border-bottom: 1px solid #E3B873;
+    top: 57%;
+    left: 46%;
+}
+
+.tools::after{
+    content: "";
+    border-radius: 30px;
+    width: 32px;
+    position: absolute; 
+    border-bottom: 1px solid #E3B873;
+    top: 57%;
+    right: 46%;
+    
+}
+
+.TEAM-wrapper{
+    width: 1236px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 101px 230px 103px;
+}
+
+.TEAM-wrapper_block{
+    width: 392px;
+    margin-right: 30px;
+}
+
+.TEAM-wrapper_block:last-child{
+    margin-right: 0px;
+}
+
+.TEAM-main_block{
+    background: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    width: 330px;
+    margin: -127px 31px 0 31px;
+    z-index: 1;
+    position: relative;
+    padding: 25px 29px 49px 34px;
+}
+
+.TEAM-main_nav{
+    margin-left: -20px;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+}
+
+.TEAM-main_block h4{
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+    margin-bottom: 13px;
+}
+
+.TEAM-main_items{
+
+}
+
+.TEAM-main_block h4{
+    font-family: Yeseva One;
+}
+
+.from{
+    width: 228px;
+    height: 54px;
+    padding: 17px 19px 17px 18px;
+    margin-top: -28px;
+    z-index: 3;
+    position: relative;
+    margin-left: 30px;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-family: Yeseva One;
+    border: none;
+    cursor: default;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    border: 1px solid transparent;
+    color: white;
+    text-align: center;
+}
+
+.from:last-child{
+     padding: 17px 16px;
+}
+
+/*------ Пятый блок - REVIEWS  ------*/
+
+.REVIEWS{
+    
+}
+
+.REVIEWS-main{
+
+}
+
+.REVIEWS-aside::before{
+    content: "";
+    background-image: url(../images/home.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -115px;
+    left: 5px;
+    bottom: -15px;
+    right: 0;
+}
+
+.REVIEWS-aside{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.REVIEWS-aside_order{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 506px;
+    margin: 0 210px 0 249px;
+    height: 473px;
+    position: relative;
+}
+
+.numeral{
+    height: 51px;
+    width: 51px;
+    background-color: #E3B873;
+    border-radius: 50%;
+    border: 8px solid white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 17px;
+}
+
+.numeral p{
+    font-family: Yeseva One;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.REVIEWS-aside_items > p{
+    font-family: Nunito Sans;
+    font-size: 14px;
+    line-height: 19px;
+    color: #363636;
+}
+
+.REVIEWS-aside_items{
+    display: flex;
+    align-items: center;
+    margin-bottom: 102px
+} 
+
+.fourth-num{
+    margin-bottom: 0;
+}
+
+.main-form-contacts{
+    z-index: 2;
+}
+
+.form-contacts p{
+    font-family: Nunito Sans;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+    padding: 28px 105px 39px 104px;
+}
+
+.form-contacts{
+    background: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-block{
+    padding: 0 49px 16px 49px;
+}
+
+.form-contacts_items{
+    margin-bottom: 49px;
+    font-family: Nunito Sans;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form-contacts_items:last-child{
+     margin-bottom: 16px;  
+}
+
+.form-contacts_items input{
+    width: 408px;
+    background: none;
+    outline: none;
+    border: none;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.checkbox-versia_2{
+    margin: 0 171px 39px 49px
+}
+
+.fake-checkbox_1{
+    margin: 0;
+}
+
+.contacts-checkbox{
+    font-family: Nunito Sans;
+    font-size: 14px;
+    line-height: 163.68%;
+    color: #FFFFFF;
+}
+
+.type-submit{
+    width: 213px;
+    margin: 0 49px 26px 244px;
+    line-height: 21px;
+}
+
+.block-pig{
+    margin: 32px 210px 242px 880px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pig-text{
+    font-size: 18px;
+    line-height: 26px;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    width: 249px;
+}
+
+/*------ Пятый блок - FANTASIES  ------*/
+
+
+.fantasies-mobile{
+    display: none;   
+}
+
+
+.FANTASIES{
+    background-color: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+    background-image: url(../images/FANTASIES-main.jpg);
+    position: relative;
+    z-index: 1;
+    box-sizing: content-box;
+    margin-bottom: 110px;
+    height: 865px;
+}
+
+.FANTASIES::before{
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.FANTASIES-main{
+    display: flex;
+    flex-direction: row;
+    box-sizing: content-box; 
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.FANTASIES-main_text{
+    display: flex;
+    flex-direction: column;
+    margin: 137px 240px 0 0;
+}
+
+.subtitle1{
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-bottom: 25px;
+    width: 300px
+}
+
+.FANTASIES-ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.FANTASIES-main-items a{
+    font-family: Nunito Sans;
+    font-size: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.FANTASIES-main-items{
+    margin-bottom: 23px;
+}
+
+.FANTASIES-main-items:last-child{
+    margin-bottom: 0;
+}
+
+.FANTASIES-main_img{
+  margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 63%;
+    z-index: 2;
+
+}
+
+.repair_styles_block1 {
+    margin-top: -45px;
+    max-width: 354px;
+    margin-right: 5%;
+    
+}
+.padding_bottom {
+    padding-bottom: 39px;
+}
+.repair_styles_block2 {
+    margin-top: -117px;
+    max-width: 354px;
+}
+
+.FANTASIES-main-items a:hover{
+   text-decoration: underline;
+    color: #E3B873;
+}
+
+.clock{
+    margin-top: -41px;
+}
+
+.tv{
+    height: max-content;
+}
+
+.bed{
+   
+   height: max-content;
+    margin-top: -112px;
+}
+
+.flower{
+    height: max-content;
+    margin: -380px 0 0 0;
+}
+
+/*------ Шестой блок - CONTACTS  ------*/
+
+.CONTACTS{
+    background-image: url(../images/City.png);
+    background-position: 100%;
+    background-repeat: repeat-x;
+}
+
+.CONTACTS-main{
+    position: relative;
+}
+
+.CONTACTS-main .subtitle-h3{
+    margin-bottom: 13px;
+}
+
+.handshake{
+    height: 33px;
+    width: 27px;
+    margin-bottom: 31px;
+}
+
+.handshake::before{
+    content: "";
+    border-radius: 30px;
+    width: 32px;
+    position: absolute; 
+    border-bottom: 1px solid #E3B873;
+    top: 52%;
+    left: 46%;
+    
+}
+
+.handshake::after{
+   content: "";
+    border-radius: 30px;
+    width: 32px;
+    position: absolute; 
+    border-bottom: 1px solid #E3B873;
+    top: 52%;
+    right: 46%; 
+    
+}
+
+.CONTACTS-text{
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: #363636;
+    margin-bottom: 46px;
+}
+
+.Block-images{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.Block-images_items{
+    width: 376px;   
+    margin-right: 54px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+
+.Block-images_items:nth-child(3){
+    margin-right: 0;
+}
+
+.FedAfaKir{
+    border-radius: 50%;
+    margin: 24px 23px 22px 20px;
+}
+
+.images-items_top{
+    display: flex;
+    align-items: center;
+}
+
+.CONTACTS-name{
+    font-family: Yeseva One;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 23px;
+
+color: #181818;
+    margin: 41px 79px 39px 0;
+}
+
+.Block-images_items p{
+    margin: 0 32px 16px 20px;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 180%;
+    color: #959595;
+}
+
+.Block-images_items p:last-of-type{
+/*    margin-bottom: 0px;*/
+    margin-bottom: 67px;
+}
+
+.cost{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 294px;
+    background: #E3B873;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+    padding: 0px 11px;
+    text-transform: uppercase;
+    font-family: Yeseva One;
+    font-size: 17px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: -27px;
+}
+
+.questions-wrapper{
+    background: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+    width: 883px;
+    margin-bottom: -250px;
+    position: relative;
+    z-index: 2;
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 34px 181px 34px 181px;
+    z-index: 1
+}
+
+.questions-title{
+    font-family: Yeseva One;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 45px;
+}
+
+.questions-block{
+    display: flex;
+    justify-content: space-between;
+}
+
+.questions-form{
+    
+}
+
+.questions-form input{
+    width: 231px; 
+}
+
+.questions-answer input{
+    width: 520px;
+}
+
+.form-text-right{
+    margin-right: 58px;
+}
+
+.checkbox-versia_3{
+    margin: 46 117px 50px 117px
+}
+
+.questions-button{
+    margin-top: 50px;
+}
+
+/*------ Седьмой блок - MAP  ------*/
+
+.MAP{
+    background-color: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+    background-image: url(../images/Window.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.MAP::before{
+    content: "";
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -2;
+}
+
+.map-view{
+    width: 925px; 
+    height: 465px;
+}
+
+.MAP-main{
+    padding: 274px 260px 65px 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+.final{
+    font-family: Yeseva One;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin: 31px 0 26px;
+    width: 600px;
+}
+
+.MAP-svg{
+    margin-bottom: 43px;
+}
+
+.mail{
+    margin-right: 15px;
+}
+
+#tr-popup[data-hidden="true"]{
+    display: none;
+}
