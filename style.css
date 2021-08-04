@@ -1,4 +1,4 @@
-﻿/* -------------------ПОЕХАЛИ---------------*/
+﻿	/* -------------------ПОЕХАЛИ---------------*/
 body{
     font-family: 'Nunito Sans', cursive, sans-serif;
     margin: 0 auto;
@@ -38,6 +38,11 @@ body{
 .button:hover{
     border: 1px solid #89F9EA;
     background-color: transparent; 
+}
+
+.btn-color:hover{
+    border: 1px solid #89F9EA;
+    background-color: #E3B434;
 }
 
 .title{
